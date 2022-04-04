@@ -1,22 +1,109 @@
-*,
-*:before,
-*:after{
-    padding: 0;
-    margin: 0;
+*
+{
     box-sizing: border-box;
+    margin: auto;
+    margin-top:0.5rem;
 }
-body{
-    height: 100vh;
-    background: #066acd;
+
+@font-face {
+    font-family: 'Digimon Basic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Digimon Basic'), url('../fonts/DigimonBasic.woff') format('woff');
+    }
+
+.base
+{
+    background-color: black;
+    height: 600px;
+    width:583px;
+    border-radius: 20px;
+    padding-top:40px;
 }
-.container{
-    width: 40%;
-    top: 50%;
-    left: 50%;
-    background: white;
-    border-radius: 10px;
-    min-width: 450px;
+
+.screen
+{
+    background-color: #373737;
+    height: 337px;
+    width:456px;
+    border-radius: 20px;
+}
+
+.screen img
+{
+    width:162px;
+    height:260px;
+    margin-top:25px;
+    margin-left:20px;
+}
+
+
+.speach-bubble
+{
+    display: none;
+    width: 300px;
+    margin: 50px auto;
+    background: #B62626;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    font-family: arial;
+    position: relative;
+    bottom: 285px;
+    left: 33px;
+    font-family: Digimon Basic;
+    color:#33D61A;
+}
+
+.bubble-text::before
+{
+    content: "";
+    width: 0px;
+    height: 0px;
     position: absolute;
-    min-height: 100px;
-    transform: translate(-50%,-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid #B62626;
+    border-top: 10px solid #B62626;
+    border-bottom: 10px solid transparent;
+    left: -19px;
+    top: 6px;
+}
+
+.nameInput
+{
+    margin-left:74px;
+    margin-top:30px;
+}
+
+.userName input
+{
+    width: 430px;
+    height: 30px;
+    background-color: #B62626;
+    font-family: Digimon Basic;
+    color: #33D61A;
+}
+
+.userName ::placeholder
+{
+    color: #33D61A;
+    font-family: Digimon Basic;
+}
+
+.button
+{
+    margin-top: 19px;
+    margin-left: 140px;
+}
+
+.button button
+{
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #B62626;
+    color:#33D61A;
+    border-radius: 30px;
+    width:130px;
+    height:35px;
 }
