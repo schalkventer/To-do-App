@@ -38,9 +38,8 @@
 }
 
 
-.speach-bubble
+#speach-bubble
 {
-    display: none;
     width: 300px;
     margin: 50px auto;
     background: #B62626;
@@ -56,7 +55,13 @@
     color:#33D61A;
 }
 
-.bubble-text::before
+@keyframes slidein {
+    0% {opacity: 0;}
+
+    100%{transition:ease;}
+}
+
+#bubble-text::before
 {
     content: "";
     width: 0px;
@@ -76,7 +81,7 @@
     margin-top:30px;
 }
 
-.userName input
+#nameId
 {
     width: 430px;
     height: 30px;
@@ -85,19 +90,20 @@
     color: #33D61A;
 }
 
-.userName ::placeholder
+#userName ::placeholder
 {
     color: #33D61A;
     font-family: Digimon Basic;
 }
 
-.button
+#submit
 {
     margin-top: 19px;
     margin-left: 140px;
+
 }
 
-.button button
+#submit
 {
     cursor: pointer;
     font-size: 20px;
