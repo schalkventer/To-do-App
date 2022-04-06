@@ -1,12 +1,14 @@
 
 let tasks = [];
 
+const currentdt = new Date()
 
 function todo(text) {
   const todo = {
     text,
     checked: false,
     id: Date.now(),
+    timestamp: currentdt
   };
 
   tasks.push(todo);
@@ -30,3 +32,20 @@ form.addEventListener('submit', event => {
     input.focus();
   }
 });
+
+function displaytasks()
+{
+    const list = document.querySelector('list');
+
+    const isChecked = todo.checked ? 'done': '';
+
+    const addedList = document.createElement('list');
+
+    addedList.setAttribute('class', `task-item ${isChecked}`);
+
+    addedList.setAttribute('data-key', todo.id);
+
+    addedList.innerHTML = list;
+
+    list.append(addedList);
+}
