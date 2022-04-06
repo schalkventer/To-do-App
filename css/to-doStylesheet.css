@@ -76,7 +76,7 @@
     margin-top:30px;
 }
 
-#nameId
+#agenda
 {
     width: 394px;
     height: 30px;
@@ -91,11 +91,44 @@
     font-family: Digimon Basic;
 }
 
-#addBtn
+.addbtn
 {
+  cursor: pointer;
     background-color: #B62626;
-    margin-left:10px;
-    height:33px;
-    width:33px;
-    border-radius: 100px;
+    color: #33D61A;
+    position: relative;
+    font-size: 22px;
+}
+
+#time
+{
+  position: absolute;
+  font-family: Digimon Basic;
+  color:#33D61A;
+  height: 20px;
+  margin-top:-297px;
+  margin-left: 237px;
+}
+
+#tasklist
+{
+  background-color: #33D61A;
+  color: #B62626;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+#edit
+{
+  display: none;
 }
