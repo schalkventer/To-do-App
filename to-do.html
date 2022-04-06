@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/to-doStylesheet.css">
-    <script src="js/add-task.js"></script>
+    
     <title>To-Do App</title>
 </head>
 <body>
@@ -20,17 +20,19 @@
                 <div class = "dateTime">
                 </div>
             </div>
-            <div class = "nameInput">
-            <form class ="form">
-                <input type="text" class ="userInput" name="userInput" placeholder="Add Agenda">
-                <button type = "submit">+</button>
-            </form>
            
-            </div>
-        </div>
-
-      
-
     </div>
+
+    <div class = "nameInput" id = "inputContainer">
+    <form class ="form">
+        <input type="text" class ="userInput" placeholder="Add Agenda and press enter">
+        <input type="submit" value ="Add">
+        <button class = "edit"></button>
+        <button class = "delete"></button>
+    </form>
+</div>
+
+<ul class = "list"></ul>
+    <script src="js/add-task.js"></script>
 </body>
 </html>
