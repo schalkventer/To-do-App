@@ -11,12 +11,26 @@
   src: local("Digimon Basic"), url("../fonts/DigimonBasic.woff") format("woff");
 }
 
+.container
+{
+  width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    overflow-y: auto;
+}
+
 .base {
   background-color: black;
   height: 417px;
   width: 498px;
   border-radius: 20px;
-  padding-top: 40px;
+  padding-top: 14px;
 }
 
 .screen {
@@ -83,7 +97,7 @@
     background-color: #B62626;
     font-family: Digimon Basic;
     color: #33D61A;
-    margin-left: 39px;
+    margin-left: -359px;
 }
 
 .userInput ::placeholder
@@ -92,11 +106,67 @@
     font-family: Digimon Basic;
 }
 
-.edit 
+.list:empty
 {
   display: none;
 }
-.delete
+
+.list
 {
+  list-style: none;
+}
+
+.input[type="checkbox"] {
+  display: none;
+}
+
+.tick {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.todo-item {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item span {
+  flex-grow: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.input[type="checkbox"] {
+  display: none;
+}
+
+.delete-todo
+{
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  width:10px;
+}
+
+.delete-todo img
+{
+
+  width:30px;
+  margin-left: -58px;
+  margin-top: -4px;
+}
+
+input[type="checkbox"] {
   display: none;
 }
