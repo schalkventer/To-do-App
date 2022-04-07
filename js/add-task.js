@@ -1,18 +1,16 @@
 
 let tasks = [];
 
-const currentdt = new Date()
-
 function todo(text) {
   const todo = {
     text,
     checked: false,
     id: Date.now(),
-    timestamp: currentdt
+
   };
 
   tasks.push(todo);
-  console.log(tasks);
+  displaytasks(todo);
 }
 
 // Select the form element
@@ -33,19 +31,26 @@ form.addEventListener('submit', event => {
   }
 });
 
-function displaytasks()
+//This function is to display new to do on the screen
+function displaytasks(todo)
 {
-    const list = document.querySelector('list');
+    const list = document.querySelector('.list');
 
     const isChecked = todo.checked ? 'done': '';
 
-    const addedList = document.createElement('list');
+    const addedList = document.createElement("li");
 
-    addedList.setAttribute('class', `task-item ${isChecked}`);
+    addedList.setAttribute('class', `todo-item ${isChecked}`);
 
     addedList.setAttribute('data-key', todo.id);
 
-    addedList.innerHTML = list;
+    addedList.innerHTML = `
+    <input id="${todo.id}" type="checkbox"/>
+    <label for="${todo.id}" class="tick js-tick"></label>
+    <span>${todo.text}</span>
+    <button class="delete-todo js-delete-todo">
+    <img class = "delete" src="images/delete.png" alt="delete icon">
+    </button>`;
 
     list.append(addedList);
 }
