@@ -11,17 +11,20 @@ function bubbleAnimate()
 {
     noDisplay = bubble.style.display ="block";
     bubble.style.animation="slidein 0.5s 1";
+    
 }
 
+bubbleAnimate()
 /****************************************************************
  * changes text in bubble with name input                       *
  ****************************************************************/
 
 let welcome ="Welcome to your To-Do App"
 let text;
-function changetext()
+
+function changetext(text)
 {
-    document.getElementById("userName").onsubmit = function changedtext()
+    let submit = document.querySelector(".userName");
     {
         text = document.getElementById("nameId");
         document.getElementById("speach-bubble").innerHTML = welcome + text.value;
