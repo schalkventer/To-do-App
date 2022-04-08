@@ -5,33 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/mystylesheet.css">
-    <script src="js/bubble-animation.js" defer></script>
-    <script src="js/submit-animation.js" defer></script>
-    <title>To-Do App Welcome</title>
+    
+    <title>To-do App/Welcome</title>
 </head>
 <body>
     
     <div class=container>
         <div class= base>
+            <div id = "decorative"></div>
             <div class = screen>
                 <img src="images/WarGreymon_Render.png" alt="Wargreymon">
                 <div id ="speach-bubble"> What is your 
                     name?
-                <div id = "bubble-text">
+                <div id = "bubble-text"></div>
+                
                 </div>
-                </div>
-            </div>
             <div class = "nameInput">
-                <form id ="userName">
-                <input type="text" id ="nameId" name="name" placeholder="Type your name here...">
-                <input type="submit" id ="submit" value="Submit">
-            </form>
-           
+                <form class ="form">
+                    <input type="text" class ="userInput" placeholder="Type here...">
+                    <input type="submit" class ="submitBtn" value ="Submit">   
+                </form>
+            </div>
             </div>
         </div>
 
       
-
+        <script src="js/bubble-animation.js"></script>
+        <script src="js/submit-animation.js"></script>
     </div>
 </body>
 </html>
