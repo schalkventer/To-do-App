@@ -100,7 +100,8 @@
     margin-left: -359px;
 }
 
-.userInput ::placeholder
+
+.form ::placeholder
 {
     color: #33D61A;
     font-family: Digimon Basic;
@@ -116,20 +117,14 @@
   list-style: none;
 }
 
-.input[type="checkbox"] {
-  display: none;
+
+.delete-todo img
+{
+background-color: red;
+  width:30px;
+  margin-top: 3px;
 }
 
-.tick {
-  width: 30px;
-  height: 30px;
-  border: 3px solid #333;
-  border-radius: 50%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
 
 .todo-item {
   margin-bottom: 10px;
@@ -146,27 +141,39 @@
   font-size: 22px;
 }
 
-.input[type="checkbox"] {
-  display: none;
-}
-
-.delete-todo
-{
-  border: none;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-  width:10px;
-}
-
-.delete-todo img
-{
-
-  width:30px;
-  margin-left: -58px;
-  margin-top: -4px;
+.done span {
+  text-decoration: line-through;
 }
 
 input[type="checkbox"] {
   display: none;
+}
+
+.tick {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tick::before {
+  content: '✓';
+  font-size: 20px;
+  display: none;
+}
+
+.done .tick::before {
+  display: inline;
+}
+
+.delete-todo {
+ 
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  margin-top: 2px;
 }
