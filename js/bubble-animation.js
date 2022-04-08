@@ -10,21 +10,30 @@ const delay = setTimeout(bubbleAnimate,1500)
 function bubbleAnimate()
 {
     noDisplay = bubble.style.display ="block";
-    bubble.style.animation="slidein 0.5s 1";
-    
+    bubble.style.animation="slidein 1.6s 1";
+
 }
 
-bubbleAnimate()
+
 /****************************************************************
  * changes text in bubble with name input                       *
  ****************************************************************/
 
 let welcome ="Welcome to your To-Do App"
-let text;
+
+let form = document.querySelector('.form');
+
+form.addEventListener('click', event =>{
+
+    event.preventDefault();
+
+    const input =  document.querySelector('.userInput');
+
+})
 
 function changetext(text)
 {
-    let submit = document.querySelector(".userName");
+    
     {
         text = document.getElementById("nameId");
         document.getElementById("speach-bubble").innerHTML = welcome + text.value;
