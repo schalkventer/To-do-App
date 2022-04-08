@@ -14,19 +14,30 @@
 
 .base
 {
-    background-color: black;
-    height: 600px;
-    width:583px;
-    border-radius: 20px;
+    background-color: #202FAF;
+    height: 419px;
+    width:498px;
     padding-top:40px;
+}
+
+#decorative
+{
+    position: relative;
+    background-color: rgb(61, 65, 150, 0.3);
+    width: 497px;
+    height: 100px;
+    margin-left: 1px;
+    margin-top: -20px;
 }
 
 .screen
 {
+    position: absolute;
     background-color: #373737;
-    height: 337px;
-    width:456px;
-    border-radius: 20px;
+    height: 324px;
+    width: 456px;
+    margin-top: -85px;
+    margin-left: 21px;
 }
 
 .screen img
@@ -77,39 +88,48 @@
 
 .nameInput
 {
-    margin-left:74px;
-    margin-top:30px;
+    background-color: #3D4196;
+    margin-top: -133px;
+    margin-left: -21px;
+    margin-right: -21px;
+    padding-bottom:62px;
 }
 
-#nameId
+.form
 {
-    width: 430px;
+    margin-top: 111px;
+    margin-left: 334px;
+}
+
+.form ::placeholder
+{
+    color: #33D61A;
+    font-family: Digimon Basic;
+}
+
+.userInput
+{
+    position: absolute;
+    width: 394px;
     height: 30px;
     background-color: #B62626;
     font-family: Digimon Basic;
     color: #33D61A;
+    margin-left: -288px;
+    margin-top: -41px;
 }
 
-#userName ::placeholder
+.submitBtn
 {
-    color: #33D61A;
-    font-family: Digimon Basic;
-}
-
-#submit
-{
-    margin-top: 19px;
-    margin-left: 140px;
-
-}
-
-#submit
-{
+    position: absolute;
     cursor: pointer;
     font-size: 20px;
     background-color: #B62626;
     color:#33D61A;
     border-radius: 30px;
-    width:130px;
-    height:35px;
+    width: 101px;
+    height: 30px;
+    margin-left: -144px;
+    margin-top: 18px;
+    font-family: Digimon Basic;
 }
