@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/to-doStylesheet.css">
-    
-    <title>To-Do App</title>
-</head>
-<body>
-    
-    <div class=container>
-        <div class= base>
-            <div class = screen>
-                <img src="images/WarGreymon_Render.png" alt="Wargreymon">
-                <div id ="speach-bubble"> What is on your 
-                    agenda for today?
-                </div>
-                <div class = "dateTime">
-                </div>
-            </div>
-           
-    <div class = "nameInput" id = "inputContainer">
-        <form class ="form">
-            <input type="text" class ="userInput" placeholder="Add Agenda and press enter">
-            <input type="submit" value ="Add">   
-        </form>
-        
-    </div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/to-doStylesheet.css" />
 
-<ul class="list"></ul>
+    <title>To-Do App</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <div class="dateTime"></div>
+    <div class="day"></div>
+    <div class="sky">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+    <div class="base">
+      <div class="screen">
+        <img src="images/WarGreymon_Render.png" alt="Wargreymon" />
+        <div id="speach-bubble">
+          What is on your agenda for today?
+          <div id="bubble-text"></div>
+        </div>
+      </div>
+    
+
+      <div class="nameInput" id="inputContainer">
+        <form class="form">
+          <input
+            type="text"
+            class="userInput"
+            placeholder="Add Agenda and press enter"
+          />
+          <input type="submit" class="addBtn" value="+" />
+        </form>
+      </div>
+    
+    <ul class="list"></ul>
+</div>
+</div>
+
 
     <script src="js/tasklist.js"></script>
-</body>
+    <script src="js/dateTime.js"></script>
+  </body>
 </html>
-
