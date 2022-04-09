@@ -4,9 +4,13 @@ function startTime() {
     let h = today.getHours();
     let m = today.getMinutes();
     let s = today.getSeconds();
+    let day = today.getDay();
+    let month = today.getMonth();
+    let year = today.getFullYear();
     m = checkTime(m);
     s = checkTime(s);
-    document.getElementById('time').innerHTML =  h + ":" + m + ":" + s;
+    document.querySelector('.dateTime').innerHTML =  h + ":" + m + ":" + s;
+    document.querySelector('.day').innerHTML =  day + "/" + month + "/" + year;
     setTimeout(startTime, 1000);
   }
 
