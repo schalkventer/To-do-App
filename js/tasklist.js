@@ -53,8 +53,16 @@ function displaytasks(todo)
     <input id="${todo.id}" type="checkbox"/>
     <label for="${todo.id}" class="tick js-tick"></label>
     <span>${todo.text}</span>
-    <button class="delete-todo js-delete-todo"> Delete
-    </button>`;
+    <button class="delete-todo js-delete-todo">
+    Delete
+    </button> 
+    <button class="edit-todo js-edit-todo">
+    Edit
+    </button>
+    <button class="calandar-todo js-calandar-todo">
+    Calandar
+    </button>
+    <span class = "udnerline"></span>`;
 
     if(item)
     {
@@ -105,6 +113,8 @@ function deleteTodo(key) {
   displaytasks(todo);
 }
 
+const date= 
+
 document.addEventListener('DOMContentLoaded', () => {
   const ref = localStorage.getItem('tasksRef');
   if(ref)
@@ -115,3 +125,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+

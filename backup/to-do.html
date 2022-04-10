@@ -8,10 +8,10 @@
 
     <title>To-Do App</title>
   </head>
+
   <body>
-    <div class="container"></div>
-    <div class="dateTime"></div>
-    <div class="day"></div>
+
+    <div class="container">
     <div class="sky">
       <div class="star"></div>
       <div class="star"></div>
@@ -22,16 +22,23 @@
       <div class="star"></div>
       <div class="star"></div>
     </div>
+  </div>
+  
+  <header>
     <div class="base">
       <div class="screen">
+        <div class="dateTime"></div>
+        <div class="day"></div>
         <img src="images/WarGreymon_Render.png" alt="Wargreymon" />
         <div id="speach-bubble">
           What is on your agenda for today?
           <div id="bubble-text"></div>
         </div>
       </div>
-    
+    </div>
+    </header>
 
+    <main>
       <div class="nameInput" id="inputContainer">
         <form class="form">
           <input
@@ -44,9 +51,10 @@
       </div>
     
     <ul class="list"></ul>
-</div>
-</div>
+    
 
+
+</main>
 
     <script src="js/tasklist.js"></script>
     <script src="js/dateTime.js"></script>
