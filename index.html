@@ -1,50 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/mystylesheet.css">
-    <script src="js/bubble.js" type = "module" defer></script>
-    <script src="js/bubbleChanged.js" type = "module" defer></script>
-    <script src="js/storedUsername.js"defer></script>
-    <title>To-do App/Welcome</title>
-</head>
-<body>
-    
-    <div class=container>
-        <div class = "sky">
-            <div class = "star"></div>
-            <div class = "star"></div>
-            <div class = "star"></div>
-            <div class = "star"></div>
-            <div class = "star"></div>
-            <div class = "star"></div>
-            <div class = "star"></div>
-            <div class = "star"></div>
-        </div>
-    </div>
-    
-        <div class= base>
-            <div id = "decorative"></div>
-            <div class = screen>
-                <img src="images/WarGreymon_Render.png" alt="Wargreymon">
-                <div id ="speach-bubble"> What is your 
-                    name?
-                <div id = "bubble-text"></div>
-                
-                </div>
-            <div class = "nameInput">
-                <form class ="form">
-                    <input type="text" class ="userInput" id = "input" placeholder="Type here...">
-                    <input type="submit" class ="submitBtn" value ="Submit">   
-                </form>
-            </div>
-            </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/to-doStylesheet.css" />
+    <script src="https://kit.fontawesome.com/2ca896b214.js" crossorigin="anonymous"></script>
+    <title>To-Do App</title>
+  </head>
 
-      
-        
-        
-</body>
+  <body>
+
+    <div class="container">
+    <div class="sky">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+
+    <div class="sky2">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+ 
+
+  <div class="sky3">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+  </div>
+</div>
+  
+  <header>
+  <div class = border>
+    <div class="base">
+      <div class ="header-image"></div>
+      <div class="screen">
+        <div class="dateTime"></div>
+        <div class="day"></div>
+        <div class = "head-text">
+          <h1>What is on your agenda today</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+    </header>
+
+    <main>
+      <div class = "backDrop"></div>
+      <div class="nameInput" id="inputContainer">
+        <form class="form">
+          <input type="text"class="userInput" placeholder="Add agenda...."/>
+          <button class = "submitBtn" type="submit">Add</button>
+          <button class = "Sort" type="submit">Sort</button>
+        </form>
+      </div>
+    
+    <ul class="list">
+      <h2>Tasks:</h2>
+    </ul>
+    
+</main>
+
+    <script src="js/tasklist.js"></script>
+    <script src="js/dateTime.js"></script>
+  </body>
 </html>
