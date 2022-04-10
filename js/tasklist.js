@@ -1,2 +1,4 @@
-const userInput = document.querySelector(".userInput")
-const userInput = document.querySelector(".userInput")
+window.addEventListener('load' , ()=>{
+    const form = document.querySelector("#form");
+    const input
+})
