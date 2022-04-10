@@ -11,72 +11,31 @@
 
   <body>
 
-    <div class="container">
-    <div class="sky">
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-    </div>
-
-    <div class="sky2">
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-    </div>
- 
-
-  <div class="sky3">
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-  </div>
-</div>
-  
   <header>
-  <div class = border>
-    <div class="base">
-      <div class ="header-image"></div>
-      <div class="screen">
-        <div class="dateTime"></div>
-        <div class="day"></div>
-        <div class = "head-text">
-          <h1>What is on your agenda today</h1>
-        </div>
-      </div>
-    </div>
-  </div>
-    </header>
+    <h1>To-Do List</h1>
+    <form id = "form">
+      <input type="text" id = "new-task" placeholder="What is on your agenda?">
+      <input type="submit" id = "new-task-submit" value="Add Task">
+    </form>
+  </header>
 
     <main>
-      <div class = "backDrop"></div>
-      <div class="nameInput" id="inputContainer">
-        <form class="form">
-          <input type="text"class="userInput" placeholder="Add agenda...."/>
-          <input type="text"class="editInput" placeholder="Update agenda...."/>
-          <input type="date" id="calandar">
-          <button class = "submitBtn" type="submit">Add</button>
-          <button class = "Sort" type="submit">Sort</button>
-        </form>
-      </div>
-    <ul class="list">
-      <h2>Tasks:</h2>
-    </ul>   
-</main>
+     <section class ="task-list">
+     <h2>Tasks</h2>
+
+     <!--<div id ="tasks">
+       <div class = "tasks">
+         <div class = "content">
+           <input type="text" class = "text" value = "important tasks" readonly>
+         </div>
+         <div class="actions">
+           <button class = "edit">Edit</button>
+           <button class = "delete">Delete</button>
+         </div>
+       </div>
+     </div>-->
+    </section>
+    </main>
 
     <script src="js/tasklist.js"></script>
     <script src="js/dateTime.js"></script>
