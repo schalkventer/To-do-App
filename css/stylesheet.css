@@ -5,10 +5,9 @@
 	src: url(../fonts/digital-7/digital-7.ttf);
   }
 :root {
-	--dark: #374151;
-	--darker: #1F2937;
-	--darkest: #111827;
-	--grey: #6B7280;
+	--dark: #2D39E3;
+	--darker: #232975;
+	--darkest: #000A99;
 	--pink: #EC4899;
 	--purple: #8B5CF6;
 	--light: #EEE;
@@ -38,7 +37,7 @@ header {
 header h1{ 
 	font-size: 2.5rem;
 	font-weight: 300;
-	color: var(--grey);
+	color: var(--light);
 	margin-bottom: 1rem;
 }
 
@@ -113,7 +112,7 @@ input, button {
 }
 
 #new-task-input::placeholder {
-	color: var(--grey);
+	color: var(--light);
 }
 
 #new-task-submit {
@@ -174,7 +173,7 @@ main {
 .task-list h2 {
 	font-size: 1.5rem;
 	font-weight: 300;
-	color: var(--grey);
+	color: var(--light);
 	margin-bottom: 1rem;
 }
 
