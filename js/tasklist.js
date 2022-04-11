@@ -1,14 +1,34 @@
-localStorage.setItem(list_el, task);
+const STORAGE_KEY = "task-storage-key";
 
 window.addEventListener('load', () => {
 	const form = document.querySelector("#new-task-form");
 	const input = document.querySelector("#new-task-input");
 	const list_el = document.querySelector("#tasks");
+	const cal_el = document.querySelector("#calendar");
 
 	form.addEventListener('submit', (e) => {
 		e.preventDefault();
 
 		const task = input.value;
+		const date = cal_el.value;
+
+
+		if(!task && !date)
+		{
+			alert("Please fill in task and select date")
+			return
+			
+		}
+		if(!task)
+		{
+			alert("Please fill in task")
+			return
+		}
+		if(!date)
+		{
+			alert("Please fill select date")
+			return
+		}
 
 		const task_el = document.createElement('div');
 		task_el.classList.add('task');
@@ -24,7 +44,22 @@ window.addEventListener('load', () => {
 		task_input_el.value = task;
 		task_input_el.setAttribute('readonly', 'readonly');
 
-		task_content_el.appendChild(task_input_el);
+		task_content_el.appendChild(task_input_el);	
+		
+		const checkbox = document.createElement('label')
+		checkbox.htmlFor = "text";
+		checkbox.classList.add('tick')
+
+		task_content_el.appendChild(checkbox);
+
+		
+
+		const due_date = document.createElement('label');
+		due_date.htmlFor = "text";
+		due_date.classList.add('dueDate')
+		due_date.innerText = cal_el.value;
+
+		task_content_el.appendChild(due_date);
 
 		const task_actions_el = document.createElement('div');
 		task_actions_el.classList.add('actions');
@@ -64,4 +99,5 @@ window.addEventListener('load', () => {
             list_el.removeChild(task_el);
         });
     });
+
 });
