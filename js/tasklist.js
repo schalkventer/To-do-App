@@ -1,4 +1,4 @@
-const STORAGE_KEY = "task-storage-key";
+//const STORAGE_KEY = "task-storage-key";
 
 window.addEventListener('load', () => {
 	const form = document.querySelector("#new-task-form");
@@ -46,17 +46,23 @@ window.addEventListener('load', () => {
 
 		task_content_el.appendChild(task_input_el);	
 		
-		const checkbox = document.createElement('label')
-		checkbox.htmlFor = "text";
+		const checkbox = document.createElement('input')
+		checkbox.type = "checkbox";
 		checkbox.classList.add('tick')
 
 		task_content_el.appendChild(checkbox);
+	
+		console.log(checkbox);
 
-		
+		checkbox.addEventListener('click', (e) => {
+				
+		check.style.display = "block";
+			
+		});
 
 		const due_date = document.createElement('label');
 		due_date.htmlFor = "text";
-		due_date.classList.add('dueDate')
+		due_date.classList.add('dueDate');
 		due_date.innerText = cal_el.value;
 
 		task_content_el.appendChild(due_date);
@@ -98,6 +104,7 @@ window.addEventListener('load', () => {
         task_delete_el.addEventListener('click', () => {
             list_el.removeChild(task_el);
         });
+		
     });
 
 });
