@@ -11,40 +11,88 @@
 
   <body>
 
+    <div class="sky">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+
+    <div class="sky2">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+ 
+
+  <div class="sky3">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+  </div>
+</div>
+
   <header>
+
+    <div class="header">
     <h1>To-Do List</h1>
+
+    <div class = "time">
+    <div class = "dateTime"></div>
+    <div class = "day"></div>
+  </div>
+</div>
     <form id="new-task-form">
-      <form id="new-task-form">
+      <div class = "add-task">
         <input 
           type="text" 
           name="new-task-input" 
           id="new-task-input" 
           placeholder="What do you have planned?" />
+          <input type="date" 
+                  id="calendar">
+        </div>
+
         <input 
           type="submit"
           id="new-task-submit" 
           value="Add task" />
       </form>
     </header>
+
     <main>
       <section class="task-list">
         <h2>Tasks</h2>
-  
         <div id="tasks">
-  
-          <!-- <div class="task">
+          <!--<div class="task">
             <div class="content">
               <input 
                 type="text" 
                 class="text" 
                 value="A new task"
                 readonly>
+                <label for="text" class = "tick"></label>
             </div>
+
             <div class="actions">
               <button class="edit">Edit</button>
               <button class="delete">Delete</button>
             </div>
-          </div> -->
+          </div> --> 
   
         </div>
     </section>
