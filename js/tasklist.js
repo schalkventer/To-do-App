@@ -54,11 +54,7 @@ window.addEventListener('load', () => {
 	
 		console.log(checkbox);
 
-		checkbox.addEventListener('click', (e) => {
-				
-		check.style.display = "block";
-			
-		});
+		
 
 		const due_date = document.createElement('label');
 		due_date.htmlFor = "text";
