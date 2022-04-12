@@ -494,3 +494,120 @@ main {
         transform: translateX(270px);
     }
 }
+
+@media (max-width: 600px)
+{
+  header {
+    max-width: 601px;
+  }
+
+  header h1
+  {
+    font-size: 1.5rem;
+  }
+
+.header
+{
+  display: inline-block;
+}
+
+.time
+{
+  position: absolute;
+  margin-top: -3.3rem;
+  font-size:1.5rem;
+  margin-left: -3rem;
+
+}
+
+.day
+{
+  font-size:0.8rem;
+}
+
+.add-task
+{
+  display: block;
+  padding: 1rem;
+  width: 22rem;
+}
+
+#new-task-form
+{
+  display: block;
+}
+
+#new-task-input
+{
+  width:20rem;
+  border-radius: 0.5rem;
+}
+
+#new-task-input::placeholder
+{
+  font-size: 1rem;
+}
+
+#calendar
+{
+  padding-left:12rem;
+  font-size:1rem;
+  margin-top:0.5rem;
+}
+
+#new-task-submit
+{
+  font-size:1.1rem;
+}
+
+#tasks .task
+{
+  display: block;
+  width: 23rem;
+}
+
+.task .content .text
+{
+  font-size: 1rem;
+}
+
+.tick
+{
+  width: 20px;
+  height: 20px;
+  margin-left: 0.1rem;
+}
+
+.task .actions .edit 
+{
+  font-size: 0.8rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+.task .actions button {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.dueDate {
+  margin-left: 20em;
+  font-size:0.8rem;
+}
+
+.sky
+{
+  top: 278px;
+  left: -58px;
+}
+
+.sky2
+{
+  display: none;
+}
+
+.sky3
+{
+  display: none;
+}
+}
